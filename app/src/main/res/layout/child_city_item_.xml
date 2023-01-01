@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/child_item"
+	android:background="@drawable/round_background"
+android:layout_marginBottom="5dp"
+	android:orientation="vertical"
+	android:padding="10dp"
+	android:layout_marginHorizontal="5dp">
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		>
+
+		<ImageView
+			android:id="@+id/child_countryImage"
+			android:layout_weight="0"
+			android:layout_marginStart="15dp"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:src="@drawable/f_0"
+			android:contentDescription="@string/app_name" />
+
+		<TextView
+			android:id="@+id/child_countryName"
+			android:layout_width="306dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginStart="10dp"
+			android:layout_weight="1"
+			android:paddingStart="20dp"
+			android:text="@string/optimal_server"
+			android:textColor="#000"
+			android:textSize="16sp" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="115ms"
+			android:textColor="#75DF59"
+			android:fontFamily="@font/middle_bold"
+			android:textSize="10sp"
+			android:layout_gravity="center_vertical"
+			android:visibility="gone"
+			android:layout_marginEnd="10dp" />
+
+		<ImageView
+			android:id="@+id/imageViewVIP"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:layout_weight="0"
+			android:visibility="gone"
+			android:layout_marginEnd="20dp"
+			android:src="@drawable/vip"
+			android:layout_gravity="center"/>
+
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="20dp"
+			android:layout_height="24dp"
+			android:layout_weight="0"
+			android:layout_marginEnd="15dp"
+			android:visibility="gone"
+			android:src="@drawable/signals"
+			android:layout_gravity="center"/>
+
+		<ImageView
+			android:id="@+id/selected_icon"
+			android:layout_width="22dp"
+			android:layout_height="22dp"
+			android:layout_marginEnd="10dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_gravity="center_vertical|center_horizontal"
+			app:layout_constraintTop_toTopOf="parent"
+			android:src="@drawable/ic_choice"
+			 />
+
+
+	</LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+	<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<LinearLayout android:id="@+id/child_item"-->
+<!--	xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--	xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--	android:layout_width="match_parent"-->
+<!--	android:layout_height="45dp"-->
+<!--	android:background="#fff"-->
+<!--	android:layout_marginHorizontal="20dp"-->
+<!--	android:orientation="vertical">-->
+
+<!--	<LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="45dp"-->
+<!--		android:background="@drawable/serverbutton"-->
+<!--		android:gravity="center"-->
+<!--		android:orientation="horizontal"-->
+<!--		>-->
+
+<!--		<ImageView-->
+<!--			android:id="@+id/child_countryImage"-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="26sp"-->
+<!--			android:layout_weight="1.5"-->
+<!--			android:contentDescription="@string/placeholder_country"-->
+<!--			android:src="@drawable/ic_globe"-->
+<!--			android:layout_marginStart="10dp"-->
+<!--			app:layout_constraintBottom_toBottomOf="parent"-->
+<!--			app:layout_constraintStart_toStartOf="parent"-->
+<!--			app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--		<LinearLayout-->
+<!--			android:layout_width="0dp"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_marginStart="8sp"-->
+<!--			android:layout_marginLeft="8sp"-->
+<!--			android:layout_marginEnd="8sp"-->
+<!--			android:layout_marginRight="8sp"-->
+<!--			android:layout_weight="7"-->
+<!--			android:orientation="vertical"-->
+<!--			app:layout_constraintEnd_toStartOf="@+id/selected_icon"-->
+<!--			app:layout_constraintStart_toEndOf="@+id/server_country_flag"-->
+<!--			app:layout_constraintTop_toTopOf="parent">-->
+
+<!--			<TextView-->
+<!--				android:id="@+id/child_countryName"-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:drawablePadding="8dp"-->
+<!--				android:layout_marginTop="-4dp"-->
+<!--				android:text="@string/placeholder_country"-->
+<!--				android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--				android:textColor="#000"-->
+<!--				app:drawableRightCompat="@drawable/ic_keyboard_arrow_down" />-->
+
+<!--		</LinearLayout>-->
+
+
+<!--		<ImageView-->
+<!--			android:id="@+id/imageViewVIP"-->
+<!--			android:layout_width="35dp"-->
+<!--			android:layout_height="35dp"-->
+<!--			android:layout_weight="0"-->
+<!--			android:layout_marginEnd="20dp"-->
+<!--			android:src="@drawable/vip"-->
+<!--			android:contentDescription="@string/app_name"-->
+<!--			android:layout_gravity="center"/>-->
+
+<!--		<ImageView-->
+<!--			android:id="@+id/imageView"-->
+<!--			android:layout_width="20dp"-->
+<!--			android:layout_height="24dp"-->
+<!--			android:layout_weight="0"-->
+<!--			android:layout_marginEnd="15dp"-->
+<!--			android:src="@drawable/signals"-->
+<!--			android:layout_gravity="center"-->
+<!--			android:contentDescription="@string/app_name" />-->
+<!--	</LinearLayout>-->
+<!--</LinearLayout>-->
+
+
+<!--&lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+<!--&lt;!&ndash;<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:id="@+id/child_item"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;	android:layout_marginHorizontal="5dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;	<LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;		android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;		android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;		android:layout_marginTop="5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;		android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;		<ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;			android:id="@+id/child_countryImage"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_weight="0"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_marginStart="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:src="@drawable/f_0"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:contentDescription="@string/app_name" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;		<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;			android:id="@+id/child_countryName"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:text="@string/optimal_server"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_marginStart="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:fontFamily="@font/middle_bold"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:textColor="#000"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:textSize="18sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;		<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:textColor="#75DF59"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:fontFamily="@font/middle_bold"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:textSize="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:visibility="gone"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_marginEnd="10dp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;		<ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;			android:id="@+id/imageViewVIP"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_width="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_height="35dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_weight="0"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:visibility="gone"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_marginEnd="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:src="@drawable/vip"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:contentDescription="@string/app_name"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_gravity="center"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;		<ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;			android:id="@+id/imageView"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_width="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_height="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_weight="0"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_marginEnd="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:src="@drawable/signals"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;			android:contentDescription="@string/app_name" />&ndash;&gt;-->
+<!--&lt;!&ndash;	</LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;	</LinearLayout>&ndash;&gt;-->
+
+
+

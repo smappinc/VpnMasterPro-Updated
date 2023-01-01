@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:background="@drawable/puprplroundbackground"
+    >
+
+    <ImageView
+        android:id="@+id/imgGIF"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtNewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="No Internet Connection"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txtDescriptoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNewUpdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Please Check You Internet Conncection"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+
+    <TextView
+        android:id="@+id/txtRetry"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/whiteroundbutton"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="RETRY"
+        android:textStyle="bold"
+        android:textColor="#6c5ddc"
+        android:textSize="10dp" />
+
+
+    <TextView
+        android:id="@+id/txtSettings"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/whiteroundbutton"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#6c5ddc"
+        android:textSize="10dp"
+        android:text="SETTING"
+      />
+
+</RelativeLayout>

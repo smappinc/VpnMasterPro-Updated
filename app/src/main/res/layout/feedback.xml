@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="feedback_plea" />
+
+
+
+    <Button
+        android:id="@+id/i_love_it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="i_love_it" />
+
+
+
+    <Button
+        android:id="@+id/needs_work"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="needs_work" />
+
+
+
+    <Button
+        android:id="@+id/maybe_later"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="maybe_later" />
+
+</LinearLayout>

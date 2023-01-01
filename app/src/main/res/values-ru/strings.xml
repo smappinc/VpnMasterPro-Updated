@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VPN Master Pro</string>
+    <string name="qs_disconnect">Отключить %s</string>
+    <string name="premium_user">Вы уже являетесь Премиум-пользователем</string>
+
+    <string name="disconnect">Отключить</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="reconnect_to">Повторное подключение к %1$s</string>
+    <string name="clear_log">Clear log</string>
+    <string name="remove_vpn">Remove VPN</string>
+
+    <string name="update">Обновлять</string>
+    <string name="update2">Потом</string>
+    <string name="update3">Доступно новое обновление</string>
+    <string name="Rate">Вам нравится VPN Master Pro?</string>
+
+    <string name="purchase">Покупка</string>
+    <string name="video">Смотреть видео</string>
+    <string name="Rate2">Нам нужна ваша поддержка, пожалуйста, оцените нас в Play Store</string>
+    <string name="cancel">Отмена</string>
+    <string name="cancel_connection">Отключить</string>
+    <string name="cancel_connection_long">Отключить VPN</string>
+
+    <string name="add_time_2">Нажмите, чтобы посмотреть видео и разблокировать 40 минут времени.</string>
+
+    <string name="connect">Отключено</string>
+
+    <string name="my_text">Нажав на <b>"Согласитесь и начните"</b> кнопку вы подтверждаете, что прочитали и согласны с нашими <b><u>Политика конфиденциальности</u></b>.</string>
+    <string name="my_textplay">Новое обновление VPN Master Pro доступно в магазине Play. Пожалуйста, загрузите новую версию приложения, чтобы получить больше возможностей и лучшее качество приложения с исправленными проблемами</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="upgrade_to">ПОЛУЧИТЬ ПРЕМИУМ</string>
+    <string name="vip">ПРЕМИУМ</string>
+    <string name="speed_fast">Конфиденциальность будет защищена</string>
+    <string name="iweek">/1 месяц</string>
+    <string name="imonth">/3 месяц</string>
+    <string name="iimonth">/12 месяц</string>
+    <string name="speed_fast1">IP will be changed</string>
+    <string name="speed_fast2">Banned will be unlocked</string>
+    <string name="text_premium1">Доступ ко всем вашим\nлюбимые видео</string>
+    <string name="link_upto">Link upto \n6 devices</string>
+    <string name="unlimited_data">Unlimited data</string>
+    <string name="no_ads">Без рекламы</string>
+    <string name="my_account">Мой счет</string>
+    <string name="account_type">Мой счет Type</string>
+    <string name="default_acount_type">Свободно</string>
+    <string name="devices">Devices</string>
+    <string name="default_devices">Default Devices</string>
+    <string name="valid_until">Годен до</string>
+    <string name="default_valid_until">XX.XX.XXXX</string>
+    <string name="restore_purchase">Восстановить покупку</string>
+    <string name="fast_string">Fast Server</string>
+    <string name="auto">Auto</string>
+    <string name="ikev2">Ikev2</string>
+    <string name="openvpn_udp">Open VPN</string>
+    <string name="openvpn_udpp">Подпишитесь на план без рекламы, чтобы наслаждаться лучшим сервисом</string>
+    <string name="no_commit">Без комментариев. Отменить в любое время</string>
+    <string name="free_trial">Начать бесплатную пробную версию СЕЙЧАС</string>
+    <string name="optimal_server">Оптимальный сервер</string>
+    <string name="quality_server">Quality Server</string>
+    <string name="placeholder_country">Страна</string>
+    <string name="disconnect_text">Вы хотите отключиться?</string>
+    <string name="connecting">Подключение</string>
+    <string name="connected">Связано</string>
+    <string name="press_to_connect">Нажмите, чтобы подключиться</string>
+    <string name="ovpn">OVPN</string>
+    <string name="select_proxy_apps">Select Proxy Apps</string>
+    <string name="privacy_policy">Private Policy</string>
+    <string name="about_us">О нас</string>
+    <string name="setting">Настройки</string>
+    <string name="all_apps">All Apps</string>
+    <string name="all_apps_des">Select Any App To Open</string>
+    <string name="please_wait">Пожалуйста, подождите</string>
+    <string name="get_all_apps">Fetching All Apps</string>
+    <string name="vpn_usage_report">Отчет об отключении</string>
+    <string name="default_country">United States</string>
+    <string name="duration">Продолжительность</string>
+    <string name="avg_upload_speed">Avg Скорость загрузки</string>
+
+    <string name="add_time">Добавить время</string>
+
+    <!-- VPN state fragment -->
+
+    <string name="state_connecting">Подключение&#8230;</string>
+    <string name="state_disconnecting">Отключение&#8230;</string>
+    <string name="state_disabled">Нет активных VPN</string>
+
+
+    <string name="disconnect_question">Отключить VPN?</string>
+    <string name="disconnect_active_connection">Это отключит активное VPN-соединение!</string>
+</resources>

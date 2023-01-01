@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/premium"
+            android:icon="@drawable/ccrown"
+            android:iconTint="#2785ED"
+            android:title="@string/upgrade_to" />
+
+
+        <item
+            android:id="@+id/myAccount"
+            android:icon="@drawable/acc"
+            android:visible="false"
+            android:iconTint="#6c5ddc"
+            android:title="My Account" />
+
+
+
+
+        <item
+            android:id="@+id/rateUs"
+            android:icon="@drawable/rate"
+            android:iconTint="#2785ED"
+
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/sharee"
+            android:iconTint="#2785ED"
+
+            android:title="Share To friends" />
+        <item
+            android:id="@+id/lisence"
+            android:icon="@drawable/settingg"
+            android:visible="false"
+            android:iconTint="#2785ED"
+
+            android:title="Lisence" />
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/settingg"
+            android:visible="false"
+            android:iconTint="#2785ED"
+
+            android:title="Settings" />
+        <item
+            android:id="@+id/proxyApp"
+            android:icon="@drawable/ic_vip_white"
+            android:iconTint="#2785ED"
+
+            android:title="Set Apps For Vpn"
+            android:visible="false"/>
+        <item
+            android:id="@+id/about"
+            android:iconTint="#2785ED"
+
+            android:icon="@drawable/settingg"
+            android:title="Settings" />
+        <item
+            android:id="@+id/contact"
+            android:iconTint="#2785ED"
+
+            android:icon="@drawable/contact_us"
+            android:title="Contact us" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/album"
+        android:icon="@mipmap/ic_launcher"
+        android:title="My Videos" />
+    <item
+        android:id="@+id/rate_app"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Rate Us" />
+    <item
+        android:id="@+id/share_app"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Share App" />
+    <item
+        android:id="@+id/privacy"
+        android:icon="@mipmap/ic_launcher"
+        android:title="privacy policy" />
+</menu>
