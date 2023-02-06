@@ -441,7 +441,7 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
         vpn_connection_status.setOnClickListener(v -> {
             connect();
         });
-        MobileAds.initialize(
+        /*MobileAds.initialize(
                 getActivity(),
                 new OnInitializationCompleteListener() {
                     @Override
@@ -455,7 +455,7 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
                                     adapterClass, status.getDescription(), status.getLatency()));
                         }
                     }
-                });
+                });*/
         protocol = view.findViewById(R.id.protocol);
 
         auto_protocol = view.findViewById(R.id.auto_protocol);

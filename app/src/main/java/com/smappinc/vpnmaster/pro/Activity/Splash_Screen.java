@@ -13,6 +13,7 @@ import android.content.IntentSender;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.graphics.Color;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -24,6 +25,10 @@ import com.android.billingclient.api.BillingClient;
 import com.android.billingclient.api.BillingClientStateListener;
 import com.android.billingclient.api.BillingResult;
 import com.android.billingclient.api.Purchase;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -55,8 +60,10 @@ import static com.smappinc.vpnmaster.pro.Util.Constant.appInfos;
 import static com.smappinc.vpnmaster.pro.Util.Constant.isNetworkAvailable;
 import static com.smappinc.vpnmaster.pro.Util.Constant.set_status_bar;
 import static com.smappinc.vpnmaster.pro.Util.Constant.vpn_connection_status;
+import static com.smappinc.vpnmaster.pro.core.VPNLog.TAG;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Objects;
 
 public class Splash_Screen extends AppCompatActivity {
@@ -75,6 +82,24 @@ public class Splash_Screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        //MobileAds Initialization
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
+                Map<String, AdapterStatus> statusMap = initializationStatus.getAdapterStatusMap();
+                for (String adapterClass : statusMap.keySet()) {
+                    AdapterStatus status = statusMap.get(adapterClass);
+                    Log.d("VPMMaster", String.format(
+                            "Adapter name: %s, Description: %s, Latency: %d",
+                            adapterClass, status.getDescription(), status.getLatency()));
+
+                }
+            }
+        });
+
+        //interstitial ads
+        loadinterstitialAd();
 
         // OneSignal Initialization
         OneSignal.initWithContext(this);
@@ -159,7 +184,7 @@ public class Splash_Screen extends AppCompatActivity {
     private void run_next() {
         if (isNetworkAvailable(Splash_Screen.this)) {
             if (vpn_connection_status()) {
-                load_intersetial_ad(ADMOB_INTERSETIAL_AD);
+               /* load_intersetial_ad(ADMOB_INTERSETIAL_AD);*/
 
                 new Handler().postDelayed(this::showInterstitial, 3000);
             } else {
@@ -282,7 +307,7 @@ public class Splash_Screen extends AppCompatActivity {
                   //  move_to_home();
                     if (!intersetial_ad.isEmpty() && IS_ADMOB_ENABLE ) {
 
-                        load_intersetial_ad(intersetial_ad);
+                        /*load_intersetial_ad(intersetial_ad);*/
 
                         new Handler().postDelayed(() -> {
                             showInterstitial();
@@ -332,7 +357,7 @@ public class Splash_Screen extends AppCompatActivity {
         }
     }
 
-    private void load_intersetial_ad(String sInterstitial_ad) {
+    /*private void load_intersetial_ad(String sInterstitial_ad) {
 
         AdRequest adRequest = new AdRequest.Builder().build();
 
@@ -347,6 +372,28 @@ public class Splash_Screen extends AppCompatActivity {
                     @Override
                     public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
                         Log.d("intersetial_failed", "" + loadAdError.getMessage());
+                        sInterstitial = null;
+                    }
+                });
+
+
+    }*/
+
+    private void loadinterstitialAd(){
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        InterstitialAd.load(this, "ca-app-pub-6991932537186982/6208061685", adRequest,
+                new InterstitialAdLoadCallback() {
+                    @Override
+                    public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+                        sInterstitial = interstitialAd;
+                        Log.i(TAG, "InterstitialAdLoaded");
+                    }
+
+                    @Override
+                    public void onAdFailedToLoad(@NonNull LoadAdError loadAdError) {
+                        Log.d(TAG, loadAdError.toString());
                         sInterstitial = null;
                     }
                 });
