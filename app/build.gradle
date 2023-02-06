@@ -2,6 +2,10 @@ plugins {
     id 'com.android.application'
     // Add the Google services Gradle plugin
     id 'com.google.gms.google-services'
+    // Add crashlytics gradle plugin
+    id 'com.google.firebase.crashlytics'
+    //Add Performance gradle plugin
+    id 'com.google.firebase.firebase-perf'
 }
 
 
@@ -46,11 +50,29 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
     implementation 'org.jetbrains:annotations:15.0'
-    implementation 'com.google.firebase:firebase-messaging:23.0.4'
+
+    //Firebase
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-inappmessaging-display'
+    implementation 'com.google.firebase:firebase-perf'
+
+
+    /*implementation 'com.google.firebase:firebase-messaging:23.0.4'
     implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.2'
     implementation 'com.google.firebase:firebase-messaging-ktx:23.0.4'
     implementation 'com.google.firebase:firebase-analytics:21.0.0'
-    implementation 'com.google.firebase:firebase-analytics-ktx:21.0.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.0.0'*/
+
+
+
     testImplementation 'junit:junit:'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
