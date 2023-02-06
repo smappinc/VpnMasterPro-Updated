@@ -288,11 +288,10 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
 
         if (!is_premium) {
             if (IS_ADMOB_ENABLE) {
-                //load_native_ad();
                 // banner ad removed
                 // show_banner_ad_home();
                 refreshAdMain();
-                refreshAd();
+                /*refreshAd();*/
             }
         }
         if(BuildConfig.VERSION_NAME.matches(Constant.Version)) {
@@ -889,6 +888,8 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
         else {
             if (disconnect_screen.contains("disconnect")) {
                 show_disconnect_screen();
+                //Added
+                load_interstitial_Ad(fragmentActivity);
             }
             Toast.makeText(getActivity(), "No Ads Loaded try again", Toast.LENGTH_SHORT).show();
         }
@@ -1004,8 +1005,8 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
         adView.setNativeAd(nativeAd);
     }
 
-
-    private void refreshAd() {
+// Added
+    /*private void refreshAd() {
 
         if (isAdded() && fragmentActivity != null) {
             AdLoader.Builder builder = new AdLoader.Builder(fragmentActivity, ADMOB_NATIVE_TESTING);
@@ -1089,7 +1090,7 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
 //
 //            adLoader.loadAd(new AdRequest.Builder().build());
         }
-    }
+    }*/
     private void refreshAdMain() {
 
         if (isAdded() && fragmentActivity != null) {
@@ -1194,6 +1195,7 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
                     dialog_home_Activity.dismiss();
 
                         showInterstitial("disconnect");
+
 
 
             });
@@ -1482,7 +1484,7 @@ PrefManager prefManager;
 
                 showInterstitial("connected");
 
-                TastyToast.makeText(fragmentActivity, "Vpn Connected! . Buy Subscription to avail amazing service", TastyToast.LENGTH_LONG, TastyToast.SUCCESS);
+                TastyToast.makeText(fragmentActivity, "Vpn Connected!", TastyToast.LENGTH_LONG, TastyToast.SUCCESS);
 
             }
           /*  Glide.with(this)
