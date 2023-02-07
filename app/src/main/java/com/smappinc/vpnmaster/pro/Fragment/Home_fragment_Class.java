@@ -266,13 +266,15 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
             if (IS_RUN) {
                 if (fragmentActivity != null) {
                     Premium_Class dialog = new Premium_Class(fragmentActivity, android.R.style.Theme_Black_NoTitleBar_Fullscreen);
-                    if (!requireActivity().isFinishing()) {
-                        dialog.show();
-///check now sir, ok... sir first see
-                        // when not premium user and tap on blue button dialog says 'you are premium user'
-                        //then when i sunscribe dialog doesnt show, only takes me to premium activity for buying
-                        //
+                    if (isAdded()) {
+                        if (!requireActivity().isFinishing()) {
+                            dialog.show();
+                            ///check now sir, ok... sir first see
+                            // when not premium user and tap on blue button dialog says 'you are premium user'
+                            //then when i sunscribe dialog doesnt show, only takes me to premium activity for buying
+                            //
 
+                        }
                     }
                 }
                 IS_RUN = false;
