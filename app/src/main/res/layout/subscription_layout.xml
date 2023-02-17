@@ -16,12 +16,13 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="470dp"
-        android:background="@drawable/premium_bg"
-        ></ImageView>
+        android:background="@drawable/premium_bg" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
         android:padding="10dp">
 
         <Button
@@ -75,23 +76,23 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:visibility="invisible"
             android:layout_marginVertical="30dp"
+            android:background="@drawable/circle"
             android:contentDescription="@string/app_name"
             android:padding="3dp"
-            android:background="@drawable/circle"
             android:src="@drawable/ccrown"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:id="@+id/p_img6"
-            android:visibility="invisible"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_marginVertical="10dp"
             android:orientation="vertical"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/premiuum"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -119,8 +120,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/lockkk"
-                        />
+                        android:src="@drawable/lockkk" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -137,8 +137,8 @@
                 <LinearLayout
                     android:layout_width="130dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginVertical="5dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/no_ads"
                     android:gravity="start"
                     android:orientation="horizontal"
@@ -150,8 +150,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/ic_baseline_access_time_24"
-                        />
+                        android:src="@drawable/ic_baseline_access_time_24" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -188,8 +187,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/secur"
-                      />
+                        android:src="@drawable/secur" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -206,8 +204,8 @@
                 <LinearLayout
                     android:layout_width="130dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginVertical="5dp"
+                    android:layout_marginStart="30dp"
                     android:background="@drawable/no_ads"
                     android:gravity="start"
                     android:orientation="horizontal"
@@ -219,8 +217,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_gravity="center"
-                        android:src="@drawable/contact_us"
-                        />
+                        android:src="@drawable/contact_us" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -477,22 +474,22 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
-                   android:paddingStart="20dp"
-                    >
-                  <ImageView
-                      android:layout_width="wrap_content"
-                      android:src="@drawable/un_selected"
-                      android:layout_height="wrap_content"
-                      android:layout_centerVertical="true"
-                      android:layout_alignParentRight="true"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp">
 
-                      ></ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/un_selected" />
+
                     <LinearLayout
                         android:id="@+id/lin1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_toRightOf="@id/line2"
+                        android:layout_toEndOf="@id/line2"
                         android:orientation="vertical">
 
                         <TextView
@@ -537,7 +534,7 @@
                                 android:id="@+id/seven_days_text"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/weekr"
+                                android:text="$1.99"
                                 android:textColor="#FFFFFF"
                                 android:textSize="19sp"
                                 android:textStyle="bold" />
@@ -545,7 +542,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginRight="-0dp"
+                                android:layout_marginEnd="-0dp"
                                 android:text="Monthly"
                                 android:textColor="#aba8a7"
                                 android:textSize="14sp"
@@ -570,17 +567,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp"
+                    android:paddingEnd="20dp"
                     android:paddingStart="20dp"
 
                     >
+
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:src="@drawable/un_selected"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
                         android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/un_selected" />
 
-                        ></ImageView>
                     <LinearLayout
 
                         android:layout_width="wrap_content"
@@ -637,12 +635,10 @@
                             <TextView
                                 android:id="@+id/one_month_text"
                                 android:layout_width="wrap_content"
-
                                 android:layout_height="wrap_content"
-                                android:text="@string/month"
+                                android:text="$3.99"
                                 android:textColor="#FFFFFF"
                                 android:textSize="19sp"
-
                                 android:textStyle="bold" />
 
                             <TextView
@@ -672,18 +668,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="1dp">
+
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:src="@drawable/un_selected"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
+                        android:src="@drawable/un_selected" />
 
-                        ></ImageView>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@id/lin5"
+                        android:layout_toEndOf="@id/lin5"
                         android:orientation="vertical"
                         android:padding="2dp">
 
@@ -738,7 +734,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingStart="20sp"
-                                android:text="@string/itmonth"
+                                android:text="$9.99"
                                 android:textColor="#FFFFFF"
                                 android:textSize="19sp"
                                 android:textStyle="bold" />
@@ -767,20 +763,19 @@
             android:layout_height="match_parent"
             android:gravity="start"
             android:orientation="vertical"
-            android:paddingEnd="15dp"
             android:paddingStart="15dp"
+            android:paddingEnd="15dp"
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-           >
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:id="@+id/subscription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:fontFamily="@font/middle_bold"
                 android:text="Subscription Terms"
                 android:textColor="@color/colorWhite"
@@ -848,14 +843,14 @@
             android:id="@+id/premium_img"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:visibility="invisible"
             android:layout_marginVertical="55dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/premium"
             android:fontFamily="@font/middle_bold"
             android:textColor="#fff"
-
             android:textStyle="bold"
+
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_close_sub"
@@ -867,8 +862,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
-            android:layout_marginTop="20dp"
             android:layout_marginVertical="70dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="@font/middle_bold"
             android:text="@string/vip"
             android:textColor="#fff"
@@ -897,7 +892,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Automatic subscription , Cancel anytime on Google Play Store"
+            android:text="@string/automatic_subscription_cancel_anytime_on_google_play_store"
             android:textColor="#FAFAFA"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -945,7 +940,7 @@
         android:fontFamily="@font/middle_bold"
         android:text="Restore Purchase"
         android:textColor="@color/colorWhite"
-        android:textSize="9dp"
+        android:textSize="9sp"
         android:textStyle="bold"
         android:visibility="gone" />
 </RelativeLayout>

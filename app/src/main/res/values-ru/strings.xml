@@ -88,4 +88,6 @@
 
     <string name="disconnect_question">Отключить VPN?</string>
     <string name="disconnect_active_connection">Это отключит активное VPN-соединение!</string>
+    <string name="go_premium">Перейти Премиум</string>
+    <string name="automatic_subscription_cancel_anytime_on_google_play_store">Автоматическая подписка, отменить в любое время в Google Play Store</string>
 </resources>
