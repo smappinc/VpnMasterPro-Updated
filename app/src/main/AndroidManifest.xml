@@ -22,12 +22,15 @@
         android:theme="@style/Theme.HigherVpn"
         android:usesCleartextTraffic="true"
         tools:replace="android:extractNativeLibs">
+
         <activity android:name="com.smappinc.vpnmaster.pro.Activity.Account_Activity"
             android:exported="true"/>
         <activity android:name="com.smappinc.vpnmaster.pro.Activity.Settings_Activity"
             android:exported="true"/>
         <activity android:name="com.smappinc.vpnmaster.pro.Activity.Server_Feature.Server_Screen"
             android:exported="true"/>
+
+
         <activity
             android:name="com.smappinc.vpnmaster.pro.Activity.Splash_Screen"
             android:screenOrientation="portrait"
@@ -35,9 +38,21 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            </activity>
 
         <activity android:name="com.smappinc.vpnmaster.pro.Proxy_Apps_Feature.Proxy_Apps_Screen"
             android:exported="true"/>
@@ -70,8 +85,6 @@
             android:name="com.smappinc.vpnmaster.pro.Record_Time.Connection_Timer"
             android:exported="true"
             android:stopWithTask="true" /> <!-- open vpn -->
-
-        ////////////////////////////////
 
         <activity
             android:name="org.acra.CrashReportDialog"

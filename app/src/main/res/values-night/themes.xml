@@ -9,7 +9,6 @@
         <item name="colorControlNormal">@color/app_background</item>
         <item name="actionBarSize">68dp</item>
         <item name="drawerArrowStyle">@style/DrawerIcon</item>
-        <item name="android:statusBarColor">@color/black</item>
     </style>
 
 
