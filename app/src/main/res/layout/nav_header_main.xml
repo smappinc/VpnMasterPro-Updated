@@ -17,11 +17,12 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:src="@drawable/sicn"
+            android:src="@drawable/ic_app_mini_logo"
             android:layout_marginTop="40dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@string/app_name" />
 
         <TextView
             android:layout_width="wrap_content"
