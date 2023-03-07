@@ -186,7 +186,7 @@ public class Splash_Screen extends AppCompatActivity {
             if (vpn_connection_status()) {
                /* load_intersetial_ad(ADMOB_INTERSETIAL_AD);*/
 
-                new Handler().postDelayed(this::showInterstitial, 3000);
+                new Handler().postDelayed(this::showInterstitial, 1500);
             } else {
              //   move_to_home();
 
