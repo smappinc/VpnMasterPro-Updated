@@ -296,9 +296,9 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
                 /*refreshAd();*/
             }
         }
-        if(BuildConfig.VERSION_NAME.matches(Constant.Version)) {
+       /* if(BuildConfig.VERSION_NAME.matches(Constant.Version)) {
             InitiateFirstDialog();
-        }
+        }*/
 
         return view;
     }
@@ -547,7 +547,6 @@ public class Home_fragment_Class extends Fragment implements Country_Picker_List
                  //   OpenService.stopVPN();
                 }else {
                     //ConnectCommand = true;
-
 
                     startVPN();
                     checkConnected=true;
